@@ -1381,8 +1381,44 @@
       background: linear-gradient(180deg, var(--cream) 0%, transparent 16%, transparent 84%, var(--sage-soft) 100%);
     }
 
+    #closing .compliments {
+      margin: 38px auto 0;
+      padding-top: 24px;
+      position: relative;
+      max-width: 440px;
+    }
+    #closing .compliments::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      opacity: .6;
+    }
+    #closing .compliments .eyebrow-compliments {
+      font-family: 'Jost', sans-serif;
+      font-size: .74rem;
+      font-weight: 500;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    #closing .compliments .compliments-names {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 4vw, 1.85rem);
+      font-style: italic;
+      font-weight: 500;
+      color: var(--blue-ink);
+      letter-spacing: .02em;
+      line-height: 1.4;
+    }
+
     #closing .final-date {
-      margin-top: 20px;
+      margin-top: 24px;
       font-size: .75rem;
       letter-spacing: .32em;
       text-transform: uppercase;
@@ -1777,6 +1813,10 @@
           <div class="divider"></div>
           <p class="thanks">Thank you for being part of our story. Your gracious presence and blessings will make our special day truly memorable as we begin this new journey together.</p>
           <div class="sign">With Love &amp; Respect,<br>Sanooj &amp; Sneja</div>
+          <div class="compliments">
+            <div class="eyebrow-compliments">With Best Compliments From</div>
+            <div class="compliments-names serif">Sanal, Athulya &amp; Neev</div>
+          </div>
           <div class="final-date">December 28, 2026</div>
         </div>
       </div>
