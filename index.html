@@ -1234,13 +1234,18 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      gap: clamp(16px, 5vw, 48px);
+      gap: clamp(4px, 1.8vw, 24px);
       margin-top: 36px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      max-width: 100%;
+      padding: 0 6px;
+      box-sizing: border-box;
     }
 
     .countdown-block {
       text-align: center;
+      flex: 0 1 auto;
+      min-width: 0;
     }
 
     /* Number flip card */
@@ -1248,22 +1253,26 @@
       position: relative;
       display: inline-block;
       perspective: 500px;
-      min-width: clamp(3rem, 11vw, 5rem);
     }
     .countdown-num {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 500;
-      font-size: clamp(3.2rem, 12vw, 5.5rem);
+      font-size: clamp(1.8rem, 6.2vw, 4.4rem);
       line-height: 1;
       color: var(--blue-ink);
       text-shadow: 0 2px 14px rgba(70, 90, 55, .18);
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: clamp(2.3rem, 8vw, 4.8rem);
       transition: transform 0.18s ease, opacity 0.18s ease;
-      background: rgba(255,255,255,0.55);
-      border: 1px solid rgba(184,148,90,.22);
-      border-radius: 10px;
-      padding: 8px 18px 4px;
-      box-shadow: 0 4px 18px rgba(70,90,55,.12), inset 0 1px 0 rgba(255,255,255,.7);
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(184, 148, 90, .28);
+      border-radius: clamp(6px, 1.5vw, 10px);
+      padding: clamp(6px, 1.6vw, 12px) clamp(8px, 2.2vw, 20px) clamp(4px, 1.2vw, 8px);
+      box-shadow: 0 4px 18px rgba(70, 90, 55, .12), inset 0 1px 0 rgba(255, 255, 255, .8);
+      box-sizing: border-box;
     }
     .countdown-num.flip-out {
       transform: rotateX(90deg);
@@ -1283,18 +1292,21 @@
       animation: cdPulse 1s ease-in-out infinite;
     }
     @keyframes cdPulse {
-      0%,100% { box-shadow: 0 4px 18px rgba(70,90,55,.12), 0 0 0 0 rgba(184,148,90,.4); }
-      50% { box-shadow: 0 4px 18px rgba(70,90,55,.12), 0 0 0 10px rgba(184,148,90,0); }
+      0%, 100% { box-shadow: 0 4px 18px rgba(70, 90, 55, .12), 0 0 0 0 rgba(184, 148, 90, .4); }
+      50% { box-shadow: 0 4px 18px rgba(70, 90, 55, .12), 0 0 0 8px rgba(184, 148, 90, 0); }
     }
     /* Animated separator */
     .countdown-sep {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: clamp(2rem, 7vw, 3.5rem);
+      font-size: clamp(1.2rem, 4.4vw, 2.8rem);
+      line-height: 1;
       color: var(--gold);
-      padding-bottom: 16px;
+      padding-bottom: clamp(16px, 4.5vw, 30px);
       animation: sepBlink 1s step-end infinite;
       opacity: 1;
+      user-select: none;
+      flex-shrink: 0;
     }
     @keyframes sepBlink {
       0%, 100% { opacity: 1; }
@@ -1302,12 +1314,13 @@
     }
 
     .countdown-label {
-      font-size: .7rem;
+      font-size: clamp(0.55rem, 1.8vw, 0.72rem);
       font-weight: 600;
-      letter-spacing: .32em;
+      letter-spacing: clamp(0.12em, 0.45vw, 0.32em);
       text-transform: uppercase;
       color: var(--ink-soft);
-      margin-top: 10px;
+      margin-top: clamp(6px, 1.5vw, 10px);
+      white-space: nowrap;
     }
 
     .countdown-done {
