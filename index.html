@@ -34,21 +34,21 @@
   <style>
     /* ============ TOKENS ============ */
     :root {
-      --ivory: #FAF7F2;
-      --cream: #F5F0E8;
+      --ivory: #FAF5EE;
+      --cream: #F5EADB;
       --white: #FFFFFF;
-      --powder: #FDF8F2;
-      --powder-soft: #F0EBE0;
-      --blue-deep: #7A9668;
-      --blue-ink: #3D5230;
-      --gold: #C09B5A;
-      --green: #8C9B7E;
-      --sage-soft: #EEF2E8;
-      --sage-mist: #F4F7EE;
-      --sage-ink: #3B4A30;
-      --ink: #1E2420;
-      --ink-soft: #5A6358;
-      --shadow-soft: 0 20px 60px rgba(60, 80, 45, 0.10);
+      --powder: #FDF9F4;
+      --powder-soft: #F3E6D8;
+      --blue-deep: #7D3B5C;
+      --blue-ink: #3D182B;
+      --gold: #C09A55;
+      --green: #A36B8C;
+      --sage-soft: #F4EBF1;
+      --sage-mist: #FAF2F7;
+      --sage-ink: #3D182B;
+      --ink: #241A20;
+      --ink-soft: #634F5C;
+      --shadow-soft: 0 20px 60px rgba(90, 45, 75, 0.08);
       --ease: cubic-bezier(.22, .61, .36, 1);
     }
 
@@ -104,7 +104,7 @@
       pointer-events: none;
       opacity: .5;
       background-image:
-        radial-gradient(circle at 2px 2px, rgba(140, 165, 115, 0.35) 1.4px, transparent 1.5px);
+        radial-gradient(circle at 2px 2px, rgba(163, 107, 140, 0.32) 1.4px, transparent 1.5px);
       background-size: 22px 22px;
       mask-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .6) 30%, rgba(0, 0, 0, .6) 70%, transparent);
     }
@@ -316,7 +316,7 @@
       align-items: flex-end;
       overflow: hidden;
       isolation: isolate;
-      background: #44523A;
+      background: #361727;
     }
 
     .parallax-layer {
@@ -352,7 +352,7 @@
       position: absolute;
       inset: 0;
       z-index: 1;
-      background: linear-gradient(180deg, rgba(20, 26, 18, .22) 0%, rgba(20, 26, 18, .04) 28%, rgba(20, 26, 18, .22) 58%, rgba(15, 20, 14, .82) 100%);
+      background: linear-gradient(180deg, rgba(45, 18, 33, .25) 0%, rgba(45, 18, 33, .04) 28%, rgba(45, 18, 33, .25) 58%, rgba(32, 12, 23, .84) 100%);
     }
 
     #hero .glow {
@@ -556,7 +556,7 @@
       margin: 28px auto 0;
       border-radius: 4px;
       overflow: hidden;
-      box-shadow: 0 12px 48px rgba(70, 90, 55, .25), 0 4px 16px rgba(70, 90, 55, .15);
+      box-shadow: 0 12px 48px rgba(90, 45, 70, .18), 0 4px 16px rgba(90, 45, 70, .12);
       border: 8px solid var(--white);
       outline: 1px solid rgba(184, 148, 90, .3);
       position: relative;
@@ -589,7 +589,7 @@
       position: absolute;
       inset: 0;
       z-index: 10;
-      background: rgba(209, 219, 194, .95);
+      background: rgba(242, 230, 238, .95);
       backdrop-filter: blur(8px);
       display: flex;
       flex-direction: column;
@@ -623,12 +623,12 @@
       0%,
       100% {
         transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(143, 161, 123, .7);
+        box-shadow: 0 0 0 0 rgba(163, 107, 140, .7);
       }
 
       50% {
         transform: scale(1.05);
-        box-shadow: 0 0 0 12px rgba(143, 161, 123, 0);
+        box-shadow: 0 0 0 12px rgba(163, 107, 140, 0);
       }
     }
 
@@ -1540,9 +1540,9 @@
       <svg viewBox="0 0 400 900" preserveAspectRatio="none" width="100%" height="100%">
         <defs>
           <linearGradient id="curtainGradL" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#EFF3E5" />
-            <stop offset="45%" stop-color="#D1DBC2" />
-            <stop offset="100%" stop-color="#B7C6A3" />
+            <stop offset="0%" stop-color="#FBF4ED" />
+            <stop offset="45%" stop-color="#E8D1DF" />
+            <stop offset="100%" stop-color="#CFA5BD" />
           </linearGradient>
         </defs>
         <rect width="400" height="900" fill="url(#curtainGradL)" />
@@ -1554,9 +1554,9 @@
       <svg viewBox="0 0 400 900" preserveAspectRatio="none" width="100%" height="100%">
         <defs>
           <linearGradient id="curtainGradR" x1="1" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#EFF3E5" />
-            <stop offset="45%" stop-color="#D1DBC2" />
-            <stop offset="100%" stop-color="#B7C6A3" />
+            <stop offset="0%" stop-color="#FBF4ED" />
+            <stop offset="45%" stop-color="#E8D1DF" />
+            <stop offset="100%" stop-color="#CFA5BD" />
           </linearGradient>
         </defs>
         <rect width="400" height="900" fill="url(#curtainGradR)" />
@@ -1805,20 +1805,20 @@
   <svg width="0" height="0" style="position:absolute">
     <symbol id="sprig" viewBox="0 0 150 150">
       <g opacity="0.92">
-        <path d="M10 140 C 30 100 20 70 55 40" fill="none" stroke="#8C9B7E" stroke-width="1.6" opacity="0.7" />
-        <path d="M18 135 C 34 108 30 88 50 62" fill="none" stroke="#8C9B7E" stroke-width="1.2" opacity="0.55" />
+        <path d="M10 140 C 30 100 20 70 55 40" fill="none" stroke="#A36B8C" stroke-width="1.6" opacity="0.7" />
+        <path d="M18 135 C 34 108 30 88 50 62" fill="none" stroke="#A36B8C" stroke-width="1.2" opacity="0.55" />
         <g transform="translate(52,38)">
-          <circle r="9" fill="#F4F7EC" />
+          <circle r="9" fill="#FDF4F8" />
           <circle r="5.4" fill="#FFFFFF" />
-          <circle cx="12" cy="4" r="7" fill="#F4F7EC" opacity="0.9" />
+          <circle cx="12" cy="4" r="7" fill="#FDF4F8" opacity="0.9" />
           <circle cx="12" cy="4" r="4" fill="#FFFFFF" />
         </g>
         <g transform="translate(30,58)">
-          <circle r="3.4" fill="#D1DBC2" />
-          <circle cx="7" cy="3" r="3" fill="#C3CFB0" />
-          <circle cx="2" cy="8" r="2.6" fill="#DCE5CE" />
-          <circle cx="10" cy="9" r="2.6" fill="#C3CFB0" />
-          <circle cx="5" cy="12" r="2.4" fill="#E6ECDB" />
+          <circle r="3.4" fill="#E8C5D8" />
+          <circle cx="7" cy="3" r="3" fill="#D69CB9" />
+          <circle cx="2" cy="8" r="2.6" fill="#E2B7CE" />
+          <circle cx="10" cy="9" r="2.6" fill="#D69CB9" />
+          <circle cx="5" cy="12" r="2.4" fill="#F0D4E4" />
         </g>
         <g transform="translate(66,20)" opacity="0.85">
           <circle r="1.6" fill="#FFFFFF" />
@@ -1826,7 +1826,7 @@
           <circle cx="4" cy="10" r="1.4" fill="#FFFFFF" />
           <circle cx="14" cy="10" r="1.2" fill="#FFFFFF" />
         </g>
-        <path d="M8 148 C 26 118 16 90 46 66" fill="none" stroke="#A9B99A" stroke-width="1" opacity="0.4" />
+        <path d="M8 148 C 26 118 16 90 46 66" fill="none" stroke="#B882A3" stroke-width="1" opacity="0.4" />
       </g>
     </symbol>
   </svg>
@@ -1972,7 +1972,7 @@
         var container = document.createElement('div');
         container.className = 'petal-burst';
         document.body.appendChild(container);
-        var colors = ['#ffffff', '#E6ECDB', '#D1DBC2', '#F4F7EC'];
+        var colors = ['#ffffff', '#F8EAF2', '#E8C5D8', '#D69CB9', '#FAF3EB'];
         var count = 14;
         for (var i = 0; i < count; i++) {
           var p = document.createElement('div');
